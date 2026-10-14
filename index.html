@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orizen Digital | Agencia de Tecnología & Automatización</title>
-    <meta name="description" content="Agencia integral de tecnología: Automatización, Web Scraping, Bots de IA y Desarrollo Web para escalar tu negocio.">
+    <title>Orizen Digital | Inteligencia Artificial para tu negocio</title>
+    <meta name="description" content="Descubrí qué tareas de tu negocio puede hacer la inteligencia artificial. Diagnóstico IA gratis de 30 minutos para negocios de Mendoza y de toda Argentina.">
+
+    <!-- Vista previa al compartir el link por WhatsApp o redes -->
+    <meta property="og:title" content="Orizen Digital | IA para tu negocio">
+    <meta property="og:description" content="Diagnóstico IA gratis: en 30 minutos te mostramos 3 tareas de tu negocio que la IA puede hacer por vos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orizendigital-coder.github.io/orizen.digital/">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,138 +23,291 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-content">
-            <div class="logo">
+            <a href="#inicio" class="logo">
                 <span class="logo-text">Orizen</span><span class="logo-dot">.</span><span class="logo-sub">digital</span>
-            </div>
+            </a>
             <ul class="nav-links">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proceso">Cómo Funciona</a></li>
-                <li><a href="#beneficios">Por qué nosotros</a></li>
+                <li><a href="#rubros">Qué hacemos</a></li>
+                <li><a href="#diagnostico-info">Diagnóstico</a></li>
+                <li><a href="#proceso">Cómo funciona</a></li>
+                <li><a href="#faq">Preguntas</a></li>
             </ul>
-            <div style="display: flex; align-items: center;">
-                <div class="lang-switch">
-                    <i class="fa-solid fa-globe"></i>
-                    <a href="index.html" class="active">ES</a>
-                    <span>|</span>
-                    <a href="en.html">EN</a>
-                </div>
-                <a href="#contacto" class="btn-outline">Quiero mi automatización</a>
-            </div>
+            <a href="#diagnostico" class="btn-outline nav-cta">Diagnóstico gratis</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
+    <!-- 1. HERO: la promesa + la acción principal -->
+    <header class="hero" id="inicio">
         <div class="hero-content fade-in-up">
-            <div class="badge">🚀 Llevá tu negocio al siguiente nivel</div>
-            <h1 class="hero-title">Automatizamos tu negocio para que <span class="highlight">ganes tiempo</span> y dinero.</h1>
-            <p class="hero-subtitle">Agencia integral de tecnología. Desarrollamos automatizaciones a medida, Bots con Inteligencia Artificial, Web Scraping y Desarrollo Web para escalar tu negocio con código.</p>
+            <div class="badge"><span class="dot-live"></span> Diagnóstico IA gratis · cupos limitados por mes</div>
+            <h1 class="hero-title">Descubrí qué tareas de tu negocio <span class="highlight">puede hacer la IA</span> por vos.</h1>
+            <p class="hero-subtitle">En una charla de 30 minutos analizamos cómo trabajás y te llevás un plan con 3 tareas que hoy hacés a mano y que la inteligencia artificial puede resolver sola. Gratis y sin compromiso.</p>
             <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Solicitar una Demo <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#servicios" class="btn-outline">Ver Servicios</a>
+                <a href="#diagnostico" class="btn-primary btn-big">Quiero mi diagnóstico gratis <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#rubros" class="btn-text">Ver ejemplos por rubro <i class="fa-solid fa-chevron-down"></i></a>
             </div>
+            <ul class="hero-points">
+                <li><i class="fa-solid fa-check"></i> 30 minutos</li>
+                <li><i class="fa-solid fa-check"></i> Presencial en Mendoza u online</li>
+                <li><i class="fa-solid fa-check"></i> Sin conocimientos técnicos</li>
+            </ul>
         </div>
     </header>
 
-    <!-- Prueba Social -->
-    <section class="social-proof fade-in">
-        <div class="proof-content glass">
-            <i class="fa-solid fa-clock-rotate-left highlight"></i>
-            <p>Tecnología diseñada para <strong>ahorrarte horas de trabajo repetitivo</strong> y que te enfoques en lo que importa: tus clientes.</p>
-        </div>
-    </section>
-
-    <!-- Servicios Section (4 Tarjetas) -->
-    <section id="servicios" class="services">
+    <!-- 2. PROBLEMA: que el dueño se sienta identificado -->
+    <section class="pain">
         <div class="section-header fade-in">
-            <h2>Nuestras <span class="highlight">Soluciones</span></h2>
-            <p>Dejá el trabajo duro a las máquinas. Nosotros nos encargamos de todo.</p>
+            <h2>¿Te suena <span class="highlight">alguna de estas</span>?</h2>
+            <p>Si dijiste que sí a una sola, hay algo para automatizar en tu negocio.</p>
         </div>
-        <div class="services-grid">
-            <div class="service-card glass fade-in-up">
-                <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
-                <h3>Automatización & Workflows</h3>
-                <p>Conectamos todas tus herramientas (CRMs, ERPs, Google Sheets) con n8n y Zapier para que tu negocio funcione en piloto automático.</p>
+        <div class="pain-grid">
+            <div class="pain-card glass fade-in-up">
+                <i class="fa-regular fa-comments"></i>
+                <p>Respondés las <strong>mismas preguntas</strong> por WhatsApp todos los días.</p>
             </div>
-            <div class="service-card glass fade-in-up" style="transition-delay: 0.1s;">
-                <div class="service-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                <h3>Bots & IA (ChatGPT)</h3>
-                <p>Asistentes 24/7 en WhatsApp o tu sitio web, impulsados por Inteligencia Artificial para atender clientes, calificar leads y vender por vos.</p>
+            <div class="pain-card glass fade-in-up" style="transition-delay: 0.08s;">
+                <i class="fa-regular fa-moon"></i>
+                <p>Te escriben <strong>fuera de horario</strong> y, cuando contestás, el cliente ya se fue.</p>
             </div>
-            <div class="service-card glass fade-in-up" style="transition-delay: 0.2s;">
-                <div class="service-icon"><i class="fa-solid fa-code"></i></div>
-                <h3>Desarrollo Back-end & Datos</h3>
-                <p>Creamos APIs a medida, sistemas de Web Scraping y Landing Pages súper optimizadas para maximizar tus conversiones.</p>
+            <div class="pain-card glass fade-in-up" style="transition-delay: 0.16s;">
+                <i class="fa-solid fa-table-list"></i>
+                <p>Pasás datos <strong>a mano</strong> de un lado a otro: planillas, sistemas, mails.</p>
+            </div>
+            <div class="pain-card glass fade-in-up" style="transition-delay: 0.24s;">
+                <i class="fa-regular fa-calendar-xmark"></i>
+                <p>Se te pierden <strong>turnos, seguimientos o cobros</strong> porque nadie se acordó de avisar.</p>
             </div>
         </div>
     </section>
 
-    <!-- Cómo Funciona (Proceso en 3 pasos) -->
+    <!-- 3. RUBROS: "ayudamos a cualquier negocio", con ejemplos concretos -->
+    <section id="rubros" class="industries">
+        <div class="section-header fade-in">
+            <h2>La IA sirve para <span class="highlight">tu rubro</span></h2>
+            <p>Algunos ejemplos de lo que automatizamos según el tipo de negocio.</p>
+        </div>
+        <div class="industries-grid">
+            <div class="industry-card glass fade-in-up">
+                <div class="industry-head"><i class="fa-solid fa-tooth"></i><h3>Consultorios y clínicas</h3></div>
+                <ul>
+                    <li>Confirmación de turnos por WhatsApp</li>
+                    <li>Recordatorios 24 hs antes y el mismo día</li>
+                    <li>Aviso automático si el paciente cancela</li>
+                </ul>
+            </div>
+            <div class="industry-card glass fade-in-up" style="transition-delay: 0.08s;">
+                <div class="industry-head"><i class="fa-solid fa-house"></i><h3>Inmobiliarias</h3></div>
+                <ul>
+                    <li>Respuesta inmediata a consultas por propiedades</li>
+                    <li>Calificación de interesados antes de llamar</li>
+                    <li>Seguimiento automático a quien no respondió</li>
+                </ul>
+            </div>
+            <div class="industry-card glass fade-in-up" style="transition-delay: 0.16s;">
+                <div class="industry-head"><i class="fa-solid fa-store"></i><h3>Comercios y distribuidoras</h3></div>
+                <ul>
+                    <li>Toma de pedidos por WhatsApp</li>
+                    <li>Respuestas sobre stock, precios y horarios</li>
+                    <li>Pedidos cargados solos en una planilla</li>
+                </ul>
+            </div>
+            <div class="industry-card glass fade-in-up" style="transition-delay: 0.24s;">
+                <div class="industry-head"><i class="fa-solid fa-briefcase"></i><h3>Estudios y servicios profesionales</h3></div>
+                <ul>
+                    <li>Recordatorios de vencimientos a clientes</li>
+                    <li>Formularios que se ordenan solos en tu CRM</li>
+                    <li>Reportes semanales armados automáticamente</li>
+                </ul>
+            </div>
+        </div>
+        <p class="industries-note fade-in">¿Tu rubro no está? <a href="#diagnostico">Contanos qué hacés</a> y lo vemos en el diagnóstico.</p>
+    </section>
+
+    <!-- 4. LA OFERTA: qué es el diagnóstico y qué te llevás -->
+    <section id="diagnostico-info" class="offer">
+        <div class="offer-box glass fade-in-up">
+            <div class="offer-text">
+                <span class="eyebrow">Nuestro punto de partida</span>
+                <h2>Diagnóstico IA <span class="highlight">gratis</span></h2>
+                <p>Antes de venderte nada, entendemos tu negocio. En 30 minutos te hacemos las preguntas correctas y después te mandamos un plan por escrito.</p>
+                <ul class="offer-list">
+                    <li><i class="fa-solid fa-circle-check"></i><span><strong>Charla de 30 minutos</strong>, presencial en Mendoza o por videollamada.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span><strong>Análisis de cómo trabajás hoy</strong>: atención, tareas repetitivas y herramientas.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span><strong>Plan por escrito en 48 hs</strong> con 3 tareas para automatizar y el tiempo que te ahorraría cada una.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span><strong>Por dónde empezar</strong>: la opción más simple y con más impacto.</span></li>
+                </ul>
+                <a href="#diagnostico" class="btn-primary">Reservar mi diagnóstico <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="offer-doc" aria-hidden="true">
+                <div class="doc-paper">
+                    <div class="doc-top">
+                        <span class="doc-brand">Orizen<span class="logo-dot">.</span>digital</span>
+                        <span class="doc-tag">Diagnóstico IA</span>
+                    </div>
+                    <div class="doc-title">Tu negocio</div>
+                    <div class="doc-line w80"></div>
+                    <div class="doc-line w60"></div>
+                    <div class="doc-item"><span>1</span><div><div class="doc-line w70"></div><div class="doc-line w40"></div></div><em>−6 h/sem</em></div>
+                    <div class="doc-item"><span>2</span><div><div class="doc-line w60"></div><div class="doc-line w50"></div></div><em>−4 h/sem</em></div>
+                    <div class="doc-item"><span>3</span><div><div class="doc-line w75"></div><div class="doc-line w30"></div></div><em>−3 h/sem</em></div>
+                    <div class="doc-start">Empezar por: 1</div>
+                </div>
+            </div>
+        </div>
+        <p class="guarantee fade-in"><i class="fa-solid fa-handshake"></i> Si no encontramos nada que valga la pena automatizar en tu negocio, te lo decimos de frente.</p>
+    </section>
+
+    <!-- 5. PROCESO: qué pasa después -->
     <section id="proceso" class="process">
         <div class="section-header fade-in">
-            <h2>Cómo <span class="highlight">Funciona</span></h2>
-            <p>De la idea a la automatización total en solo 3 pasos simples.</p>
+            <h2>Cómo <span class="highlight">trabajamos</span></h2>
+            <p>Empezamos chico, mostramos resultados y crecemos con vos.</p>
         </div>
         <div class="process-grid">
             <div class="process-step fade-in-up">
                 <div class="step-number">1</div>
-                <h3>Analizamos tu necesidad</h3>
-                <p>Nos contás tu problema: ya sea responder mensajes, extraer datos o desarrollar una web. Nosotros diseñamos el sistema.</p>
+                <h3>Diagnóstico gratis</h3>
+                <p>Charlamos 30 minutos y te mandamos el plan con las 3 oportunidades para tu negocio.</p>
             </div>
             <div class="process-step fade-in-up" style="transition-delay: 0.1s;">
                 <div class="step-number">2</div>
-                <h3>Desarrollo & Demo</h3>
-                <p>Programamos la solución tecnológica y te mostramos una prueba funcional en vivo antes de implementarla.</p>
+                <h3>Primera automatización</h3>
+                <p>Si querés avanzar, arrancamos por la más simple. Te mostramos una demo funcionando antes de instalarla.</p>
             </div>
             <div class="process-step fade-in-up" style="transition-delay: 0.2s;">
                 <div class="step-number">3</div>
-                <h3>Lanzamiento</h3>
-                <p>Implementamos el software, conectamos los servidores y aseguramos que todo funcione perfecto 24/7.</p>
+                <h3>Soporte y mejoras</h3>
+                <p>La mantenemos funcionando, la ajustamos con tu equipo y sumamos nuevas cuando tenga sentido.</p>
             </div>
         </div>
     </section>
 
-    <!-- Por qué elegirnos Section -->
-    <section id="beneficios" class="benefits">
-        <div class="benefits-content">
-            <h2 class="fade-in">¿Por qué <span class="highlight">Orizen Digital</span>?</h2>
-            <div class="benefits-list">
-                <div class="benefit-item fade-in-left">
-                    <i class="fa-solid fa-check-circle"></i>
-                    <div>
-                        <h4>Soporte y Mantenimiento</h4>
-                        <p>No te dejamos solo después de entregar el código. Aseguramos que tus sistemas no se caigan nunca.</p>
-                    </div>
-                </div>
-                <div class="benefit-item fade-in-left" style="transition-delay: 0.1s;">
-                    <i class="fa-solid fa-bolt"></i>
-                    <div>
-                        <h4>Velocidad y Calidad</h4>
-                        <p>Desarrollos ágiles pero robustos. Empezá a ver el retorno de tu inversión en días, no en meses.</p>
-                    </div>
-                </div>
-                <div class="benefit-item fade-in-left" style="transition-delay: 0.2s;">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <div>
-                        <h4>Enfoque en Negocios</h4>
-                        <p>No solo escribimos código; creamos soluciones tecnológicas pensadas para aumentar tus ingresos reales.</p>
-                    </div>
-                </div>
+    <!-- 6. SERVICIOS: lo que construimos -->
+    <section id="servicios" class="services">
+        <div class="section-header fade-in">
+            <h2>Lo que <span class="highlight">construimos</span></h2>
+            <p>Herramientas a medida, conectadas con lo que ya usás.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card glass fade-in-up">
+                <div class="service-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3>Asistentes de IA</h3>
+                <p>Atienden a tus clientes 24/7 por WhatsApp o en tu web: responden consultas, califican interesados y te avisan cuando hay alguien listo para comprar.</p>
+            </div>
+            <div class="service-card glass fade-in-up" style="transition-delay: 0.1s;">
+                <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <h3>Automatización de tareas</h3>
+                <p>Conectamos tus herramientas (planillas, CRMs, mails, sistemas) para que la información se mueva sola y nadie tenga que copiar y pegar.</p>
+            </div>
+            <div class="service-card glass fade-in-up" style="transition-delay: 0.2s;">
+                <div class="service-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                <h3>Datos y reportes</h3>
+                <p>Recolectamos y ordenamos la información de tu negocio para que tengas reportes al día sin armarlos a mano.</p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section id="contacto" class="cta glass fade-in">
-        <h2>¿Listo para delegar el trabajo manual?</h2>
-        <p>Escribinos contándonos qué necesitas resolver y te armamos una propuesta a medida sin compromiso.</p>
-        <div class="hero-buttons">
-            <a href="https://wa.me/5492617634342?text=Hola!%20Quiero%20información%20sobre%20sus%20servicios%20de%20automatización" target="_blank" class="btn-primary pulse">
-                <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
-            </a>
-            <a href="mailto:orizen.digital@gmail.com" class="btn-outline">
-                <i class="fa-solid fa-envelope"></i> orizen.digital@gmail.com
-            </a>
+    <!-- 7. QUIÉN ESTÁ DETRÁS: marca personal y confianza -->
+    <section class="founder">
+        <div class="founder-box glass fade-in-up">
+            <div class="founder-photo">
+                <!-- Reemplazá este bloque por tu foto: <img src="felipe.jpg" alt="Felipe, fundador de Orizen Digital"> -->
+                <span>F</span>
+            </div>
+            <div class="founder-text">
+                <span class="eyebrow">Quién está detrás</span>
+                <h2>Hola, soy <span class="highlight">Felipe</span></h2>
+                <p>Fundé Orizen Digital en Mendoza para que cualquier negocio, no solo las grandes empresas, pueda usar la inteligencia artificial. Mi trabajo es encontrar las tareas que te sacan tiempo y hacer que se resuelvan solas.</p>
+                <p>Trabajo cerca de cada cliente: si estás en Mendoza, nos podemos ver en persona.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PREGUNTAS FRECUENTES: responde las objeciones antes de que aparezcan -->
+    <section id="faq" class="faq">
+        <div class="section-header fade-in">
+            <h2>Preguntas <span class="highlight">frecuentes</span></h2>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item glass fade-in-up">
+                <summary>¿El diagnóstico es gratis de verdad?</summary>
+                <p>Sí. No te pedimos tarjeta ni te comprometés a nada. Si después querés implementar alguna de las ideas, te pasamos un presupuesto aparte y vos decidís.</p>
+            </details>
+            <details class="faq-item glass fade-in-up">
+                <summary>¿Por qué es gratis?</summary>
+                <p>Porque es la mejor forma de que nos conozcas. Si el plan te sirve, es probable que quieras que lo implementemos nosotros. Por eso hacemos una cantidad limitada por mes.</p>
+            </details>
+            <details class="faq-item glass fade-in-up">
+                <summary>¿Necesito saber de tecnología?</summary>
+                <p>No. Vos nos contás cómo trabajás y nosotros nos ocupamos de la parte técnica. Todo lo que entregamos está pensado para que lo use cualquier persona de tu equipo.</p>
+            </details>
+            <details class="faq-item glass fade-in-up">
+                <summary>¿Sirve para un negocio chico?</summary>
+                <p>Sí, sobre todo para negocios chicos. Una sola automatización bien hecha, como responder consultas o recordar turnos, ya puede ahorrarte varias horas por semana.</p>
+            </details>
+            <details class="faq-item glass fade-in-up">
+                <summary>¿Cuánto cuesta implementar una automatización?</summary>
+                <p>Depende de lo que haga falta. Por eso primero hacemos el diagnóstico: con el plan en la mano te pasamos un precio claro, con un pago de instalación y un mantenimiento mensual.</p>
+            </details>
+            <details class="faq-item glass fade-in-up">
+                <summary>¿Trabajan solo en Mendoza?</summary>
+                <p>Estamos en Mendoza y ahí podemos reunirnos en persona, pero trabajamos con negocios de toda Argentina por videollamada.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- 9. FORMULARIO: la conversión -->
+    <section id="diagnostico" class="form-section">
+        <div class="form-box glass fade-in-up">
+            <div class="form-intro">
+                <span class="eyebrow">Último paso</span>
+                <h2>Reservá tu diagnóstico <span class="highlight">gratis</span></h2>
+                <p>Completá estos datos y te escribimos por WhatsApp para coordinar día y horario.</p>
+                <ul class="form-points">
+                    <li><i class="fa-solid fa-clock"></i> Te respondemos en menos de 24 hs hábiles</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Cupos limitados por mes</li>
+                    <li><i class="fa-solid fa-lock"></i> Tus datos no se comparten con nadie</li>
+                </ul>
+            </div>
+            <form id="diagnostico-form" class="lead-form" novalidate>
+                <div class="field">
+                    <label for="f-nombre">Tu nombre</label>
+                    <input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Ej: Laura" required>
+                </div>
+                <div class="field">
+                    <label for="f-negocio">Nombre del negocio</label>
+                    <input id="f-negocio" name="negocio" type="text" autocomplete="organization" placeholder="Ej: Consultorio Sonrisas" required>
+                </div>
+                <div class="field">
+                    <label for="f-rubro">Rubro</label>
+                    <select id="f-rubro" name="rubro" required>
+                        <option value="" disabled selected>Elegí una opción</option>
+                        <option>Salud / consultorio / clínica</option>
+                        <option>Inmobiliaria</option>
+                        <option>Comercio / distribuidora</option>
+                        <option>Estudio contable o profesional</option>
+                        <option>Gastronomía</option>
+                        <option>Estética / peluquería</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="f-tarea">¿Qué tarea te come más tiempo hoy?</label>
+                    <textarea id="f-tarea" name="tarea" rows="3" placeholder="Ej: responder consultas por WhatsApp, confirmar turnos, cargar pedidos..." required></textarea>
+                </div>
+                <div class="field">
+                    <label>¿Cómo preferís la charla?</label>
+                    <div class="radio-row">
+                        <label class="radio"><input type="radio" name="modalidad" value="Presencial en Mendoza" checked> Presencial en Mendoza</label>
+                        <label class="radio"><input type="radio" name="modalidad" value="Videollamada"> Videollamada</label>
+                    </div>
+                </div>
+                <p class="form-error" id="form-error" role="alert"></p>
+                <button type="submit" class="btn-primary btn-big btn-block pulse">
+                    <i class="fa-brands fa-whatsapp"></i> Reservar por WhatsApp
+                </button>
+                <p class="form-hint">Al tocar el botón se abre WhatsApp con tu mensaje listo para enviar.</p>
+            </form>
         </div>
     </section>
 
@@ -158,22 +318,30 @@
                 <div class="logo">
                     <span class="logo-text">Orizen</span><span class="logo-dot">.</span><span class="logo-sub">digital</span>
                 </div>
-                <p class="footer-slogan">Desarrollo y automatización para empresas que buscan escalar.</p>
+                <p class="footer-slogan">Inteligencia artificial y automatización para negocios que quieren crecer.</p>
             </div>
-            
             <div class="footer-contact">
                 <h4>Contacto</h4>
-                <p><i class="fa-solid fa-envelope"></i> orizen.digital@gmail.com</p>
-                <p><i class="fa-brands fa-whatsapp"></i> +54 9 261 763-4342</p>
-                <p><i class="fa-solid fa-location-dot"></i> Remoto (Global)</p>
+                <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5492617634342" target="_blank" rel="noopener">+54 9 261 763-4342</a></p>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:orizen.digital@gmail.com">orizen.digital@gmail.com</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> Mendoza, Argentina</p>
             </div>
-
-
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <p><a href="#rubros">Qué hacemos</a></p>
+                <p><a href="#diagnostico-info">Diagnóstico gratis</a></p>
+                <p><a href="#faq">Preguntas frecuentes</a></p>
+            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Orizen Digital. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a class="wa-float" href="https://wa.me/5492617634342?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20diagn%C3%B3stico%20IA%20gratis" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
